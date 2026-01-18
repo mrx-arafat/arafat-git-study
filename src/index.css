@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --emerald-700: #047857;
+  --mint-300: #6ee7b7;
+  --mint-400: #34d399;
+  --dark-900: #0d1117;
+  --dark-800: #161b22;
+  --dark-700: #21262d;
+  --dark-600: #30363d;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0d1117 0%, #0f1a1a 50%, #0d1117 100%);
+  color: #e6edf3;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar - terminal green style */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161b22;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #238636;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2ea043;
+}
+
+/* Hover lift effect with green glow */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15), 0 0 20px rgba(16, 185, 129, 0.1);
+}
+
+/* Terminal glow effect */
+.terminal-glow {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2), inset 0 1px 0 rgba(110, 231, 183, 0.1);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6ee7b7 0%, #10b981 50%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated border gradient */
+.border-gradient {
+  position: relative;
+  border: 1px solid transparent;
+  background: linear-gradient(#161b22, #161b22) padding-box,
+              linear-gradient(135deg, #10b981, #6ee7b7, #10b981) border-box;
+}
+
+/* Pulsing dot animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-dot {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Typing cursor animation */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
