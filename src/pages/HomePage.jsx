@@ -23,7 +23,7 @@ const TerminalHeader = () => {
         </div>
         <div className="mt-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-4">
-            Arafat Git Study
+            Arafat Git Mastery
           </h1>
           <p className="text-[#8b949e] text-lg md:text-xl">
             <span className="text-[#6ee7b7]">→</span> Everything you need to know to master{' '}
@@ -118,15 +118,7 @@ const StatsBar = () => {
 const Footer = () => {
   return (
     <footer className="mt-20 border-t border-[#30363d] pt-8 pb-6">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-        {/* Left side - Branding */}
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#10b981] to-[#059669] flex items-center justify-center">
-            <span className="text-[#0d1117] font-bold text-sm font-mono">A</span>
-          </div>
-          <span className="text-[#e6edf3] font-semibold">Arafat Git Study</span>
-        </div>
-
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         {/* Center - Credit */}
         <div className="flex items-center gap-2 text-[#8b949e] text-sm">
           <span>Built with</span>
