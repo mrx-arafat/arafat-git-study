@@ -2,5 +2,5 @@ services:
   app:
     image: ghcr.io/mrx-arafat/arafat-git-study:latest
     ports:
-      - "80:80"
+      - "3080:3080"
     restart: unless-stopped
